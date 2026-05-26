@@ -99,3 +99,10 @@ This project with be an Angular application that will give you recipes based on 
 - What I changed before approving: Claude gave placeholders so I had to manually replace each image link with a working one.
 - Verification: Each dish has its recipe and ingredience. All other UI elements still function normally.
 - One thing I learned: Claude is unable to get images from the web, likely due to copright restrictions.
+
+## Reflection
+
+The agentic workflow let me ship things I wasn't able to do alone such as having the components talk to eachother or helping create the new page when the user clicked on a dish. 
+The only times I overrode Claude was in the frontend code, when something looked off or was missing. 
+Other than that, Claude did really well in the backend part of the app, which is what saved the most amount of time. However, this reveals a lot about my judgement gaps. I understand that Claude more than likely did something wrong and I just didn't catch it. By me saying that it did great, I do feel like it creates a large gap in what I see vs what I understand. I'll continue to improve though, and hopefully begin to truly understand the changes Claude makes and their potential risks. This is only the beginning, as I still have much more to learn about my coding journy. These agents are super helpful, and this experience really proved it. In fact, after I completed each task, I created a new branch and moved all my changes to that branch, but I had forgotten to but node_modules inside of a gitignore file, so my code ended up corrupting. After some back and forth with Claude, I was able to get it working again, which relieved me of so much stress.  Unfortunately, because of this, it made merging the branches kinda difficult and I'm afraid I don't have enough time to figure that out. This goes to show how much more I have to learn.
+I'm sure this will be of great use throughout my internship. I would have never thought that using AI in this way could be so much more effective when trying to avoid as many problems as possible. This way, I can really see and understand what's happening when an agent writes code.
