@@ -1,0 +1,4 @@
+<header class="header">
+  <input class="search-bar" type="text" placeholder="Search recipes..." (input)="queryChange.emit($any($event.target).value)" />
+  <button class="menu-button" type="button" (click)="menuClick.emit()">&#9776;</button>
+</header>

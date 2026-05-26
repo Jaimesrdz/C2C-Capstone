@@ -1,0 +1,30 @@
+@if (recipe) {
+  <div class="detail-page">
+    <a class="back-link" routerLink="/">&#8592; Back</a>
+    <img class="detail-image" [src]="recipe.imageUrl" [alt]="recipe.name" />
+    <h1 class="detail-name">{{ recipe.name }}</h1>
+
+    <section class="detail-section">
+      <h2>Ingredients</h2>
+      <ul class="ingredient-list">
+        @for (id of recipe.ingredients; track id) {
+          <li>{{ getIngredientLabel(id) }}</li>
+        }
+      </ul>
+    </section>
+
+    <section class="detail-section">
+      <h2>Instructions</h2>
+      <ol class="instruction-list">
+        @for (step of recipe.instructions; track $index) {
+          <li>{{ step }}</li>
+        }
+      </ol>
+    </section>
+  </div>
+} @else {
+  <div class="detail-page">
+    <a class="back-link" routerLink="/">&#8592; Back</a>
+    <p>Recipe not found.</p>
+  </div>
+}

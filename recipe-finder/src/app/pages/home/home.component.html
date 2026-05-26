@@ -1,0 +1,5 @@
+<app-header (menuClick)="toggleSidebar()" (queryChange)="onQueryChange($event)" />
+<app-sidebar [visible]="isOpen()" />
+<div class="main-content" [class.sidebar-open]="isOpen()">
+  <app-body />
+</div>

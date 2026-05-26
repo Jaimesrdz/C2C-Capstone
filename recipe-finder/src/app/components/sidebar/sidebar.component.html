@@ -1,0 +1,17 @@
+@if (visible) {
+  <aside class="sidebar">
+    <h3 class="sidebar-title">Filters</h3>
+    <div class="ingredient-list">
+      @for (ingredient of ingredients; track ingredient.id) {
+        <button
+          class="ingredient-btn"
+          [class.active]="recipeService.selectedIds().has(ingredient.id)"
+          type="button"
+          (click)="recipeService.toggleIngredient(ingredient.id)"
+        >
+          {{ ingredient.label }}
+        </button>
+      }
+    </div>
+  </aside>
+}

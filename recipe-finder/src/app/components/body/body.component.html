@@ -1,0 +1,7 @@
+<div class="recipe-grid">
+  @for (recipe of recipeService.filteredRecipes(); track recipe.id) {
+    <a class="recipe-card" [routerLink]="['/recipe', recipe.id]">
+      <h2 class="recipe-name">{{ recipe.name }}</h2>
+    </a>
+  }
+</div>
